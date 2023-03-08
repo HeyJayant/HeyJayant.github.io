@@ -1,9 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fullscreen Linktree Embed</title>
-  </head>
-  <body>
-    <iframe src="https://github.com" width="100%" height="100%" frameborder="0"></iframe>
-  </body>
-</html>
+<head>
+	<title>Jayant Yadav</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #FDB813;
+			color: #333;
+		}
+
+		header {
+			text-align: center;
+			background-color: #0077B5;
+			color: #fff;
+			padding: 2rem 0;
+			margin-bottom: 2rem;
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 0 2rem;
+		}
+
+		.social-icons {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 2rem;
+		}
+
+		.social-icons li {
+			margin: 0 1rem;
+		}
+
+		.social-icons li a {
+			display: block;
+			height: 3rem;
+			width: 3rem;
+			background-color: #fff;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 3rem;
+			color: #0077B5;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.social-icons li a:hover {
+			transform: scale(1.2);
+		}
+
+		.overflow-menu {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
+			background-color: #fff;
+			border-radius: 0.5rem;
+			padding: 1rem;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			display: none;
+		}
+
+		.overflow-menu.show {
+			display: block;
+		}
+
+		.overflow-menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.overflow-menu li {
+			padding: 0.5rem 0;
+			border-bottom: 1px solid #eee;
+			text-align: right;
+		}
+
+		.overflow-menu li:last-child {
+			border-bottom: none;
+		}
+
+		.overflow-menu a {
+			color: #333;
+			text-decoration: none;
+		}
+
+		.overflow-menu a:hover {
+			color: #0077B5;
+		}
+
+		form {
+			margin-top: 2rem;
+			text-align: center;
+		}
+
+		form label {
+			display: block;
+			margin-bottom: 1rem;
+		}
+
+		form input[type="text"],
+		form input[type="email"],
+		form textarea {
+			display: block;
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/jayantyadav08/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/JayantYadav08" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/jayantyadav_08/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal">Send me a message</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Message Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="messageModalLabel">Send me a message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="message-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="message-name" required>
+          </div>
+          <div class="mb-3">
+            <label for="message-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="message-email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="form-label">Message</label>
+            <textarea class="form-control" id="message-text" rows="5" required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
